@@ -5,6 +5,7 @@ require('dotenv').config();
 const port = process.env.PORT || 3000;
 
 app.use(express.json())
+app.use('/', express.static(__dirname + "/public/cv-layout"));
 app.use('/marvel-api', express.static(__dirname + "/public/marvel-api"));
 
 app.all("*", (req, res) => {
