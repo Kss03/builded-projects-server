@@ -1,0 +1,273 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+
+
+
+
+/* $grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px
+); */
+
+:root {
+  --sm: 576px;
+  --lg: 992px;
+  --xxl: 1400px;
+
+  /* colors */
+  --bg-left : #E8EAEE;
+  --bg-right: #f8fafc;
+  --bg-gradient: linear-gradient(90deg, rgba(44,49,60,1) 0%, rgba(33,37,41,1) 100%);
+  --bg-light: #f8fafc;
+  --font-light: #e5e7eb;
+  --font-dark: #5C6168;
+  --orange: #ffc107;
+  --transition: 1.25s cubic-bezier(.2, .6, 0, 1);
+  --font-family: 'Open Sans', sans-serif;
+
+  --box-shadow: rgb(0 0 0 / .15) 0 0 30px 10px;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: var(--font-family);
+  color: var(--font-dark);
+}
+
+body {
+  margin: 0;
+  background-color: #fff;
+}
+
+.container {
+  background: none;
+  width: var(--lg);
+  max-width: var(--lg);
+  min-width: var(--lg);
+}
+
+@media (max-width: 575.98px) {
+  .container {
+    width: 100%;
+    margin: 0 10px;
+  }
+}
+@media (max-width: 991.98px) {
+  .container {
+    width: var(--sm);
+    margin: 0 auto;
+  }
+}
+@media (min-width: 991.98px) {
+  .container {
+    width: var(--lg);
+    margin: 0 auto;
+  }
+}
+
+.link-unstyled {
+  text-decoration: none;
+}
+
+.text-upercase {
+  text-transform: uppercase;
+}
+
+.margin-none {
+  margin: 0;
+}
+
+.d-flex {
+  display: flex;
+  align-items: center;
+}
+
+.d-inline-block {
+  display: inline-block;
+}
+
+.ms-10 {
+  margin-left: 10px !important;
+}
+
+.me-auto {
+  margin-right: auto !important;
+}
+
+.mb-7 {
+  margin-bottom: 7px !important;
+}
+.mb-15 {
+  margin-bottom: 15px !important;
+}
+
+.mb-50 {
+  margin-bottom: 50px !important;
+}
+
+.svg-margin {
+  margin-right: 7px;
+}
+.bg-orange {
+  padding: 3px;
+  background-color: var(--orange);
+}
+
+.main-block {
+  display: flex;
+}
+
+.left-block {
+  width: 30%;
+  background-color: var(--bg-left);
+}
+
+.right-block {
+  width: 70%;
+  background-color: var(--bg-right);
+}
+
+.left-block .content-block {
+  padding: 10px 20px 10px 30px;
+  margin-right: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.right-block .content-block {
+  padding: 10px 20px 10px 50px;
+}
+
+.content-item a {
+  text-transform: capitalize;
+}
+
+h2 {
+  margin: 0;
+  margin-bottom: 15px;
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 4px;
+}
+
+h3 {
+  margin: 0;
+  margin-bottom: 25px;
+  position: relative;
+  display: inline-block;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 3.575px;
+  text-transform: uppercase;
+}
+
+h4 {
+  margin: 0;
+  margin-bottom: 10px;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+}
+
+h5 {
+  margin: 0;
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+ul {
+  margin: 0;
+}
+
+/* top  */
+
+.top-block { 
+  display: flex; 
+}
+
+.top-block .left-block, .top-block .right-block {
+  padding-top: 30px;
+  display: flex;
+}
+
+.top-block .left-block .content-block {
+  margin-right: 15px;
+  width: 100%;
+}
+.top-block .right-block .content-block {
+  display: flex;
+  width: 100%;
+}
+
+.photo {
+  margin-right: 30px;
+  width: 180px;
+  height: 180px;
+}
+
+.photo img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+/* main  */
+
+.left-block h3::after {
+  content: '';
+  position: absolute;
+  display: inline-block;
+  bottom: -10px;
+  left: 0;
+  width: 50px;
+  height: 2px;
+  background-color: var(--font-dark);
+}
+
+.right-block h3::after {
+  content: '';
+  position: absolute;
+  display: inline-block;
+  bottom: -10px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: var(--font-dark);
+}
+
+.main-block .list-item {
+  margin-bottom: 5px;
+}
+
+.main-block h5 {
+  margin: 0;
+  margin-bottom: 3px;
+  margin-left: 10px;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.main-block a {
+  margin-left: 10px;
+}
+
+.main-block p {
+  margin: 0;
+}
