@@ -94,6 +94,10 @@ body {
   margin-left: 10px !important;
 }
 
+.mx-20 {
+  margin: 0 20px !important;
+}
+
 .me-auto {
   margin-right: auto !important;
 }
@@ -147,7 +151,7 @@ body {
   text-transform: capitalize;
 }
 
-h2 {
+h1 {
   margin: 0;
   margin-bottom: 15px;
   font-size: 35px;
