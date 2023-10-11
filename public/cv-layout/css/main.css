@@ -93,6 +93,9 @@ body {
 .ms-10 {
   margin-left: 10px !important;
 }
+.ms-15 {
+  margin-left: 15px !important;
+}
 
 .mx-20 {
   margin: 0 20px !important;
@@ -100,6 +103,10 @@ body {
 
 .me-auto {
   margin-right: auto !important;
+}
+
+.m-0 {
+  margin:0;
 }
 
 .mb-7 {
@@ -147,9 +154,9 @@ body {
   padding: 10px 20px 10px 50px;
 }
 
-.content-item a {
+/* .content-item a {
   text-transform: capitalize;
-}
+} */
 
 h1 {
   margin: 0;
